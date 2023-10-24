@@ -105,9 +105,9 @@ const Login: React.FC = () => {
   const intl = useIntl();
 
 
-  useEffect (() => {
-    handleSubmit();
-  },[]);
+  // useEffect (() => {
+  //   handleSubmit();
+  // },[]);
 
   const fetchUserInfo = async () => {
     const userInfo = await initialState?.fetchUserInfo?.();
