@@ -32,15 +32,15 @@ export async function getInitialState(): Promise<{
     return undefined;
   };
   // 如果不是登录页面，执行
-  const { location } = history;
-  if (location.pathname !== loginPath) {
-    const currentUser = await fetchUserInfo();
-    return {
-      fetchUserInfo,
-      currentUser,
-      settings: defaultSettings as Partial<LayoutSettings>,
-    };
-  }
+  // const { location } = history;
+  // if (location.pathname !== loginPath) {
+  //   const currentUser = await fetchUserInfo();
+  //   return {
+  //     fetchUserInfo,
+  //     currentUser,
+  //     settings: defaultSettings as Partial<LayoutSettings>,
+  //   };
+  // }
   return {
     fetchUserInfo,
     settings: defaultSettings as Partial<LayoutSettings>,
