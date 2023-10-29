@@ -2,6 +2,7 @@
   "name": "ant-design-pro",
   "version": "6.0.0",
   "private": true,
+  "homepage": "https://timurbarmakov.github.io/ant-design/",
   "description": "An out-of-box UI solution for enterprise applications",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 max build",
@@ -36,9 +37,15 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.8.1",
     "@ant-design/pro-components": "^2.6.28",
@@ -48,6 +55,7 @@
     "classnames": "^2.3.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "netlify-cli": "^16.9.3",
     "omit.js": "^2.0.2",
     "querystring": "^0.2.1",
     "rc-menu": "^9.12.0",
@@ -86,5 +94,7 @@
     "typescript": "^5.2.2",
     "umi-presets-pro": "^2.0.3"
   },
-  "engines": { "node": ">=12.0.0" }
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }
