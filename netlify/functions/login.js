@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
     }),
   };
 
-  if (password === '' && username === '') {
+  if (password === 'a' && username === 'a') {
     response = {
       statusCode: 200,
       body: JSON.stringify({
